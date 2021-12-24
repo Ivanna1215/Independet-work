@@ -14,7 +14,10 @@ function getYearOfBirth () {
 age = year - YearOfbirth;
 if (YearOfbirth>2021 || YearOfbirth < 0) {
     alert ('Error1')
-} else {
+} else if (YearOfbirth===0) {
+    alert ('Good luck')
+}
+else {
     alert (`Your age ${age}`);
 }
 }
