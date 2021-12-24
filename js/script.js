@@ -8,8 +8,30 @@ function getUserName () {
 function getYearOfBirth () {
     let YearOfbirth;
     let age;
+
     YearOfbirth = +prompt ('Input  the year of birth');
     const year = 2021; 
 age = year - YearOfbirth;
-alert (`Your age ${age}`);
+if (YearOfbirth>2021 || YearOfbirth < 0) {
+    alert ('Error1')
+} else {
+    alert (`Your age ${age}`);
+}
+}
+
+function getPerimeter () {
+    let length;
+    length = +prompt ('Input your length sides of the square');
+    let perimeter;
+    perimeter = length*4;
+    alert (`Perimeter your square ${perimeter}`);
+}
+
+function getRadius () {
+    let radius;
+    radius = +prompt('Input radius circle');
+    let result;
+    result = Math.round (radius**2*Math.PI);
+    alert (`Your result ${result} `);
+
 }
