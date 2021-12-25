@@ -99,6 +99,18 @@ function getNumChocolate () {
 
 }
 
+function getNumber () {
+  let num = +prompt ('Input your three-digit number');
+  let c = Math.floor (num/100);
+  console.log (c);
+  let b = Math.floor (num/10 ) % 10;
+  console.log (b);
+  let a = Math.floor (num % 100) % 10;
+  console.log (a);
+  alert (`your number ${a}${b}${c}`);
+
+}
+
 function getAmountInterest () {
     let amount;
     amount = +prompt ('Input your amount');
@@ -109,4 +121,15 @@ if (amount<=0 ) {
 } else {
     alert (`Your amount interest ${result}`)
 }
+}
+
+function multiplicationTable () {
+    let result = '';
+    for (let i = 2; i<=9; i++) {
+        for (let j = 1; j<=10; j++) {
+            result =  i + 'x' + j +'=' + (i*j);
+            console.log (result);
+        }
+        console.log ('');
+    }
 }
