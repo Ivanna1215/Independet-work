@@ -123,13 +123,24 @@ if (amount<=0 ) {
 }
 }
 
+// function multiplicationTable () {
+//     let result = '';
+//     for (let i = 2; i<=9; i++) {
+//         for (let j = 1; j<=10; j++) {
+//             result =  i + 'x' + j +'=' + (i*j);
+//             console.log (result);
+//         }
+//         console.log ('');
+//     }
+// }
+
 function multiplicationTable () {
     let result = '';
     for (let i = 2; i<=9; i++) {
-        for (let j = 1; j<=10; j++) {
-            result =  i + 'x' + j +'=' + (i*j);
-            console.log (result);
-        }
-        console.log ('');
+for (let j = 1; j<=10; j++) {
+    result = i + 'x'+ j + '=' + i*j;
+    console.log (result);
+}
+console.log ('')
     }
 }
