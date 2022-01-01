@@ -150,9 +150,9 @@ function WhoAreYou () {
     age = +prompt('How old are you?');
     if (age === 0 && age<=12 ) {
 alert ('You are a child')
-    } else if (age>=12 && age<=18) {
+    } else if (age>12 && age<=18) {
         alert ('You are a teenager') 
-    } else if (age>=18 && age<60) {
+    } else if (age>18 && age<60) {
         alert ('You are an adult') 
     } else if (age>=60) {
         alert ('You are  retired')
@@ -197,4 +197,36 @@ function userNum () {
     }
 
 
+}
+
+function AleapYear () {
+    let year = +prompt ('Input your year');
+ if ( year % 400 ===0) {
+     alert ('a leap year')
+ } else if  (year % 4 === 0 && year % 100 >1) {
+     alert ( 'this is a leap year') 
+ } else {
+     alert ('this is not a leap year')
+ }
+}
+function palindrome () {
+    let num,a,b,c,d,e;
+    num = +prompt('Input your number');
+     e = num % 10 ; 
+    console.log (e);
+    d = Math.floor (num/10) % 10;
+    console.log (d);
+    c = Math.floor (num/100)%10;
+    console.log (c);
+    b = Math.floor (num/1000)%10;
+    console.log (b);
+    a = Math.floor (num/10000);
+    console.log (a);
+    if (a===e && b===d ) {
+        alert ('This number is palindromе')
+    } else  {
+    alert ('This number is not a palindromе')
+    }
+    
+    
 }
