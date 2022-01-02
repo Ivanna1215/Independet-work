@@ -227,6 +227,59 @@ function palindrome () {
     } else  {
     alert ('This number is not a palindromе')
     }
-    
-    
 }
+function currencyСonverter () {
+    let d;
+    d = +prompt ('Enter the amount in dollars');
+    let result =+prompt ('In which currency you want to convert dollars? 1- EUR,2-UAN, 3-AZN');
+let amount;
+if (result === 1) {
+    amount = d * 0.88;
+alert (d * 0.88);
+} else if (result===2) {
+    amount = d * 27.27;
+    alert (amount);
+} else if (result===3) {
+    amount = d * 0.59;
+    alert (amount);
+} else {
+    alert ('you entered an incorrect code')
+}
+
+}
+ function byeAmount () {
+     let bye = +prompt ('Input your bye');
+     if (bye<200) {
+         alert (bye);
+     } else if ( bye>=200 && bye<300) {
+         alert (bye-(bye*0.03));
+     } else if ( bye>=300 && bye<=500) {
+         alert (bye-(bye*0.05));
+     } else if (bye>500){
+        alert (bye-(bye*0.07));
+     }
+ }
+ function question () {
+     alert ('complete the sentence with the correct verb forms');
+     let a,b,c;
+     let result = 0;
+     a = +prompt ('.... i on time? 1 - am; 2 - is; 3 - are');
+     b = +prompt ('...he on time?  1 - am,  2 - is;  3 - are');
+     c = +prompt ('....they late?  1 - am;  2 - is;  3 - are');
+if (a===1) {
+    result +=2;
+} else {
+    result===0;
+}
+if (b===2) {
+    result +=2;
+} else {
+    result===0;
+}
+if (c===3) {
+    result +=2;
+} else {
+    result ===0;
+}
+alert (`Your result ${result}`)
+ }
