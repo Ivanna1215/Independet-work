@@ -277,3 +277,34 @@ if (c===3) {
 } 
 alert (`Your result ${result}`)
  }
+
+ function data () {
+
+      let day = +prompt('Input your day');
+     let month = +prompt('Input your month');
+    let year = +prompt('Input your year');
+     if (( year % 400 ===0 || year % 4 === 0 && year % 100 >0) && day===28 && month === 2) {
+         day +=1;
+         month +=0;
+alert (`Your result N1 ${day}.${month}.${year}`)
+     } 
+     else if ((year % 400 ===0 || year % 4 === 0 && year % 100 >0) && day===29 && month === 2) {
+         day -=28;
+         month +=1;
+         alert (`Your result N2 ${day}.${month}.${year}`)
+     } 
+     else if ((year % 400 > 0 || year % 4 > 0 && year % 100 ===0) && day===28 && month ===2 ) {
+day -=27;
+month +=1;
+alert (`Your result ${day}.${month}.${year}`)
+     } 
+     else if (month=== 1 && day === 31 || month=== 3 && day === 31 || month === 5 && day === 31 || month === 7 && day === 31 || month === 8 && day === 31  || month === 10 && day === 31) {
+day -=30;
+month +=1;
+alert (`Your result N3 ${day}.${month}.${year}`) 
+}
+     
+
+
+
+ }
