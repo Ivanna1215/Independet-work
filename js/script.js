@@ -203,7 +203,7 @@ function AleapYear () {
     let year = +prompt ('Input your year');
  if ( year % 400 ===0) {
      alert ('a leap year')
- } else if  (year % 4 === 0 && year % 100 >1) {
+ } else if  (year % 4 === 0 && year % 100 >0) {
      alert ( 'this is a leap year') 
  } else {
      alert ('this is not a leap year')
@@ -235,7 +235,7 @@ function currencyСonverter () {
 let amount;
 if (result === 1) {
     amount = d * 0.88;
-alert (d * 0.88);
+alert (amount);
 } else if (result===2) {
     amount = d * 27.27;
     alert (amount);
@@ -247,16 +247,16 @@ alert (d * 0.88);
 }
 
 }
- function byeAmount () {
-     let bye = +prompt ('Input your bye');
-     if (bye<200) {
-         alert (bye);
-     } else if ( bye>=200 && bye<300) {
-         alert (bye-(bye*0.03));
-     } else if ( bye>=300 && bye<=500) {
-         alert (bye-(bye*0.05));
-     } else if (bye>500){
-        alert (bye-(bye*0.07));
+ function buyAmount () {
+     let buy = +prompt ('Input your bye');
+     if (buy<200) {
+         alert (buy);
+     } else if ( buy>=200 && bye<300) {
+         alert (buy-(buy*0.03));
+     } else if ( buy>=300 && buy<=500) {
+         alert (buy-(buy*0.05));
+     } else if (buy>500){
+        alert (buy-(buy*0.07));
      }
  }
  function question () {
@@ -269,17 +269,17 @@ alert (d * 0.88);
 if (a===1) {
     result +=2;
 } else {
-    result===0;
+    result=0;
 }
 if (b===2) {
     result +=2;
 } else {
-    result===0;
+    result= 0;
 }
 if (c===3) {
     result +=2;
 } else {
-    result ===0;
+    result = 0;
 }
 alert (`Your result ${result}`)
  }
