@@ -268,18 +268,12 @@ alert (amount);
      c = +prompt ('....they late?  1 - am;  2 - is;  3 - are');
 if (a===1) {
     result +=2;
-} else {
-    result=0;
-}
+} 
 if (b===2) {
     result +=2;
-} else {
-    result= 0;
-}
+} 
 if (c===3) {
     result +=2;
-} else {
-    result = 0;
-}
+} 
 alert (`Your result ${result}`)
  }
