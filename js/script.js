@@ -299,7 +299,6 @@ function data() {
         
         alert(` N3a you entered an incorrect code `)
     } 
-    
     else if (month === 1 && day === 31 || month === 3 && day === 31 || month === 5 && day === 31 || month === 7 && day === 31 || month === 8 && day === 31 || month === 10 && day === 31) {
         day -= 30;
         month += 1;
@@ -309,8 +308,6 @@ function data() {
         
         alert(` N4a you entered an incorrect code`);
     } 
-
-
     else if (month === 4 && day === 30 || month === 6 && day === 30 || month === 9 && day === 30 || month === 11 && day === 30)   {
         day -= 29;
         month += 1;
@@ -331,11 +328,28 @@ function data() {
         
         alert(`Your result N6a  incorrect code`)
     }
-
-
      else {
         day += 1;
         alert(`Your result N7 ${day}.${month}.${year}`)
     }
+
+}
+
+function lengthCircle() {
+let length = +prompt('Input your the length of the circle');
+let perimeter = +prompt('Input you the perimetr of the square!');
+let side = perimeter/4;
+let diameter = length/PI;
+// if (diameter>=side) {
+//     alert ('Your square is bad');
+// } else {
+//     alert ('Your square is good');
+// }
+if (circle<=side) {
+    alert ('Your circle is good');
+  } else {
+    alert ('Your circle is bad');
+  }
+
 
 }
