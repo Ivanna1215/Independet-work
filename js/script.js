@@ -338,18 +338,15 @@ function data() {
 function lengthCircle() {
 let length = +prompt('Input your the length of the circle');
 let perimeter = +prompt('Input you the perimetr of the square!');
-let side = perimeter/4;
-let diameter = length/PI;
-// if (diameter>=side) {
-//     alert ('Your square is bad');
-// } else {
-//     alert ('Your square is good');
-// }
-if (circle<=side) {
-    alert ('Your circle is good');
-  } else {
-    alert ('Your circle is bad');
-  }
-
-
+let side;
+side = perimeter/4;
+console.log (side);
+let diam;
+ diam = length/Math.PI;
+console.log (diam);
+if (diam>side) {
+    alert ('Your square is bad');
+} else {
+    alert ('Your square is good');
+}
 }
